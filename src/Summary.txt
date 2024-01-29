@@ -1,0 +1,31 @@
+Import/Export
+
+
+Default Import/Export:
+
+1- default export exports a single file (component) as default
+2- default export can export only expressions, class or functions
+3- default export cannot export variables
+
+TIP: while using default exports, we can exclude function name or class name
+> export default () {}
+> export default class extends React.Component 
+
+Example1: importing/exporting a single file
+// when exporting a single file (component):
+export default component_name1
+
+// when importing single file (component):
+import component_name1 from '.';
+
+----------------------------------------------------------------------------------------------------------------
+
+Named Import/Export:
+with the use of named exports, we can export multiple files (components) from a module.
+
+Example1: importing/exporting a multiple files
+// when exporting multiple files
+export { component_name1, component_name2 }
+
+// when importing multiple files
+import { component_name1, component_name2 } from '.';
